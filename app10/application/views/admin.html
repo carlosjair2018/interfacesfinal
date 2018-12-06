@@ -1,0 +1,46 @@
+$def with(datos)
+<meta name="Description" content="Author: Carlos Jair Sanchez Rivera, 
+    Licenciado: Electronica, Category:Tics">
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">
+    Menu administrador
+      <a href='/insert'><button type="button" class="btn btn-primary">Insertar Productos</button></a>
+      <a href='/borrar'><button type="button" class="btn btn-primary">Borrar Productos</button></a>
+      <a href='/actualizar'><button type="button" class="btn btn-primary">Actualizar Productos</button></a>
+<br><br>
+    </a>
+  </nav>
+
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Bienvenido administrador</h5>
+      <p class="card-text">Revisar sus pendientes para tener un mejor control de ventas</p>
+      <a href="http://www.madisa.com/promociones" class="btn btn-primary">Nuevas promociones de proveedores</a>
+      <img src="../../static/images/imagen1.jpg" class="rounded float-left" alt="...">
+      <img src="../../static/images/imagen2.jpg" class="rounded float-right" alt="...">
+    </div>
+
+    <div class="card-header">
+            <h2>LISTAS DE REFACCIONES DISPONIBLES<h2>
+          </div>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NOMBRE</th>
+      <th scope="col">PRECIO</th>
+      <th scope="col">EXISTENCIAS</th>
+  </thead>
+  <tbody>
+    $for row in datos:
+      <tr>        
+        <td><a href="/view/$row.id">$row.id</a></td>
+        <td>$row.nombre</td>
+        <td>$row.precio</td>
+        <td>$row.existencia</td>
+          
+     </tr>
+  </tbody>
+</table>

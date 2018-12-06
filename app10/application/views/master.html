@@ -1,0 +1,53 @@
+$def with (page)
+<!doctype html>
+<html lang="en">
+  <meta name="Description" content="Author: Carlos Jair Sanchez Rivera, 
+  Licenciado: Electronica, Category:Tics">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <title>BIENVENIDO MULTI-REMAQ!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a title="LOGO" href="/logo"><img src="../../static/images/images3.jpg" width="60" height="60" class="d-inline-block align-top" alt="LOGO"/></a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="/iniciarsesion">Iniciar sesion <span class="sr-only">(current)</span></a>
+                  </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/acercade">Acerca de <span class="sr-only">(current)</span></a>
+            </li>
+                      
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    <div class="container-fluid">
+        $:page
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../static/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="../../static/js/popper.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+</body>
+
+</html>

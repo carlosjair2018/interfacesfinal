@@ -1,0 +1,36 @@
+$def with(datos)
+<h1>Borrar</h1> 
+<meta name="Description" content="Author: Carlos Jair Sanchez Rivera, 
+    Licenciado: Electronica, Category:Tics">
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Bienvenido administrador</h5>
+      <p class="card-text">Antes de eliminar un producto, revisar si es el producto deseado</p>
+    </div>
+
+    <div class="card-header">
+            <h2>LISTAS DE REFACCIONES DISPONIBLES<h2>
+          </div>
+          <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">NOMBRE</th>
+                  <th scope="col">PRECIO</th>
+                  <th scope="col">EXISTENCIAS</th>
+                  <th scope="col">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                $for row in datos:
+                  <tr>                    
+                    <td><a href="/view/$row.id">$row.id</a></td>
+                    <td>$row.nombre</td>
+                    <td>$row.precio</td>
+                    <td>$row.existencia</td>
+                    <td><a href="/delete/$row.id">Delete</a></td>                 
+                 </tr>
+              </tbody>
+            </table>
